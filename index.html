@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Hello World!</title>
+  </head>
+
+  <body>
+
+    <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <button class="dropbtn">Navigate
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content">
+                <a class="nav_active" href="index.html">Home</a>
+                <a href="appointment.html">New Appointment</a>
+                <a href="planned.html">Planned</a>
+            </div>
+        </div>
+        <a href="signup.html">Login/SignUp</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+  </body>
+</html>
