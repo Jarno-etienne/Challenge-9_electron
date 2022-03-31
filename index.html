@@ -5,26 +5,45 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
-    <title>PlayLaterList</title>
+    <title>Hello World!</title>
   </head>
+  
 
   <body>
 
+
+<div class="topnav_wrapper">
+
+  <div class="topnav_logo">
+
+  </div>
+
+  <div class="topnav_middle_wrapper">
+    <a href="library.html">Library</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="play_later.html">Play Later</a>
+    <a href="recent.html">Recent</a>
+  </div>
+
+
     <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn">Navigate
+            <button class="dropbtn">Account
             <i class="fa fa-caret-down"></i>
           </button>
             <div class="dropdown-content">
-                <a class="nav_active" href="index.html">Home</a>
-                <a href="appointment.html">New Appointment</a>
-                <a href="planned.html">Planned</a>
+                <a class="nav_active" href="index.html">Account</a>
+                <a href="Item1.html">Item 1</a>
+                <a href="Item2.html">Item 2</a>
             </div>
         </div>
-        <a href="signup.html">Login/SignUp</a>
+        <a href="Account.html">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <div class="search_bar_wrapper">
+        <input class="search_bar" type="text" placeholder="Search..">
+      </div>
     </div>
-
+</div>
     <script>
         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
         function myFunction() {
@@ -36,5 +55,27 @@
             }
         }
     </script>
+
+    <div class="home_left_block">
+      <div class="left_block_content_wrapper">
+
+        <div class="left_block_content" id="left_block_c1">
+          item name
+        </div>
+
+        <div class="left_block_content" id="left_block_c2">
+          item name
+        </div>
+
+        <div class="left_block_content" id="left_block_c3">
+          item name
+        </div>
+
+        <div class="left_block_content" id="left_block_c4">
+          item name
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
